@@ -4,7 +4,7 @@ import {HttpClient} from '@angular/common/http'
 
 @Injectable()//declaring a class of type injectable
 export class freeapiservice{
-    apiKey="be13071f"
+    apiKey="xxxxxxxx"// USE YOUR OWN API KEY FORM OMDB<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     url=`https://www.omdbapi.com/?type=movie&apikey=${this.apiKey}&`;//DRY principle
     //now we will inject the httpt client using thr constuctor
     constructor(private httpclient: HttpClient){};
