@@ -1,0 +1,20 @@
+
+<!--if extro info is requested remove DOM and display extra info-->
+<app-detail-view *ngIf="detailView; else searchView" (goBack)="goBack()" [idString]="movieObjConduit"></app-detail-view>
+
+<ng-template #searchView>
+    <div id="fixed_elements">
+        <app-logo></app-logo>
+        <app-search (updateView)="updateView($event)"></app-search>
+        </div>
+        
+        <app-side-bar [query]="changeChoiceConduit" (drop)="dropFromSideBar($event)"></app-side-bar>
+        <app-movie-cards 
+        [buttonArr]="disableButtonsArray" 
+        [query]="changeViewConduit" 
+        (showDetailDes)="showDetails($event)"
+        (addToList)="addToSideBar($event)">
+        </app-movie-cards>
+        <app-banner *ngIf="banner"></app-banner>
+        
+</ng-template>

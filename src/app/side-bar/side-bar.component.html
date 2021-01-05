@@ -1,0 +1,31 @@
+<div class="super">
+    <div class="front">
+        <p id="info_side_bar">
+            Nominated Movies
+        </p>
+        <p id="selection_empty" *ngIf="listItems.length==0">
+            nomination list is empty<br>
+            please nominate some movies <br>
+            form the left hand side
+        </p>
+        <div class="container" >
+            <div class="item" *ngFor="let item of listItems">
+                <div class="des_field_comp">
+                        <div class="item_image" >
+                            <img class="center" src="{{item.Poster}}">
+                        </div>
+                       
+                        <h3>
+                            {{item.Title }}({{item.Year}})
+                        </h3>
+                         <div class="add_button">
+                            <button (click)="_drop(item.imdbID)">drop</button>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+    
+</div>

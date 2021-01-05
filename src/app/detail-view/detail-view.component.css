@@ -1,0 +1,79 @@
+#container{
+    padding:1vw;
+    display: grid;
+    grid-template-rows: (8,1fr);
+    grid-template-columns: (8,1fr);
+}
+
+#backdrop_image{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+}
+
+#text_container{
+    padding: 5vh;
+    grid-row: 2/-1;
+    grid-column: 5/7;
+    backdrop-filter: brightness(60%);
+    -webkit-backdrop-filter: brightness(60%);
+    border-radius: 12px;
+    color:white;
+    font-family: lato;
+}
+
+#movie_image{
+    grid-column: 2/4;
+    grid-row: 3/-1;
+    padding:2vw;
+
+}
+
+h2{
+    font-size: 3vw;
+    font-weight: 200;
+}
+
+p{
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+
+#back{
+    position: fixed;
+    bottom: 6vh;
+    left:2vw;
+}
+
+
+button{
+    margin-bottom: 1vw;
+    margin-right: 1vh;
+    white-space: normal;
+    border:0px;
+    font-family: lato;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2vw;
+    height: 50px;
+    color: black;
+    transition: 0.3s;
+}
+
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color:red;
+    box-shadow: 0 0 11px rgb(255, 48, 48);
+}
+
+button:active{
+    color: white;
+    background-color:  green;
+    box-shadow: 0 0 11px greenyellow;
+}

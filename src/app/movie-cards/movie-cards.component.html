@@ -1,0 +1,22 @@
+<p id="description"> {{description}}</p>
+<div class="container" >
+    <div class="item" *ngFor="let item of listItems">
+        <div class="des_field_comp">
+            <div class="item_image" >
+                <img class="center" src="{{item.Poster}}">
+            </div>
+            <h3>
+                {{item.Title }}({{item.Year}})
+            </h3>
+            <div class="button_bar">
+                 <div class="add_button">
+                    <button [disabled]="isAdded(item.imdbID)"class="add_to_cart" (click)="_addToList(item)">
+                        <div *ngIf="!isAdded(item.imdbID); else elseBlock">Nominate</div>
+                        <ng-template #elseBlock>Movie Nominated</ng-template>
+                    </button>
+                    <button class="Details" (click)="showDetails(item.imdbID)">Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

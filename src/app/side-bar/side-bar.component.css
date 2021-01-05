@@ -1,0 +1,123 @@
+.backdrop{
+    background-color: #FFF8D5;
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    filter: blur(30px);
+    z-index: 150;
+}
+
+.container{
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 20vw;
+    grid-template-rows: repeat(5,10vh);
+    gap: 2vw;
+}
+#info_side_bar{
+    word-wrap: break-word;
+    font-family: lato;
+    font-size: 3vw;
+    font-weight: 200;
+}
+#selection_empty{
+    word-wrap: break-word;
+    font-family: lato;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 100;
+    padding:2vw ;
+}
+.front{
+    z-index: 200;
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0px;
+}
+
+.item{
+    box-shadow: 0 0 5px rgba(33,33,33,.1);
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+.center {
+    height: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.des_field_comp{
+    display: flex;
+}
+
+/*
+-------------------------
+button bar
+-------------------------
+*/
+
+.add_button{
+    float: right;
+    padding-left:2vw ;
+}
+
+button{
+    margin-bottom: 1vw;
+    margin-right: 1vh;
+    white-space: normal;
+    border:0px;
+    font-family: lato;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1vw;
+    height: 3vh;
+    padding: 1vh 1vw 1vh 1vw;
+    color: black;
+    transition: 0.3s;
+}
+
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(218, 32, 32);
+    box-shadow: 0 0 11px rgb(255, 0, 0);
+}
+
+button:active{
+    color: rgb(0, 0, 0);
+    background-color:  rgb(255, 255, 255);
+    box-shadow: 0 0 11px rgb(155, 155, 155);
+}
+/*
+-------------------------
+-------------------------
+-------------------------
+*/
+h3{
+    overflow-y: auto;
+    max-height: 7vh;
+    font-style: normal;
+    font-family: lato;
+    font-weight: 100;
+    font-size: 1.5vw;
+
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+    word-wrap: break-word;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }

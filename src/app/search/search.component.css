@@ -1,0 +1,16 @@
+input{
+    font-family: lato;
+    font-weight: 200;
+    font-size: 3vh;
+    font-style: italic;
+    color: rgb(75, 74, 74);
+    background-color: rgb(223, 223, 223);
+    border: none;
+    height: 4vh;
+    width: 60vw;
+    border-radius: 7px;
+    padding: 1vw;
+}
+body{
+    margin: 2vw;
+}
