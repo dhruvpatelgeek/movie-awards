@@ -49,7 +49,14 @@ export class DetailViewComponent implements OnInit {
       (data)=>{
         this._movieObj=data;
         console.log(this._movieObj.Title);
-        this.image=this._movieObj.Poster;
+        if(this._movieObj.Poster=="N/A")
+        {
+          this.image="https://www.flicks.co.nz/img/placeholders/poster-placeholder.jpg";
+        }
+        else
+        {
+          this.image=this._movieObj.Poster;
+        }
         this.plot=this._movieObj.Plot;
         this.actors=this._movieObj.Actors;
         this.language=this._movieObj.Language;

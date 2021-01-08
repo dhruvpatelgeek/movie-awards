@@ -37,7 +37,6 @@ export class SideBarComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    // changes.prop contains the old and the new value...
     if(this.query!=undefined)
       {
         this.listItems.push(this.query.movie);

@@ -1,27 +1,3 @@
-# UX Developer Intern & Web Developer Intern Challenge - Summer 2021
-> deployed at
->https://www.shoppiesawards.com/
-
-### requirements
-- [x] Search results should come from OMDB's API (free API key: http://www.omdbapi.com/apikey.aspx).
-- [x] Each search result should list at least its title, year of release and a button to nominate that film.
-- [x] Updates to the search terms should update the result list
-- [x] Movies in search results can be added and removed from the nomination list.
-- [x] If a search result has already been nominated, disable its nominate button.
-- [x] Display a banner when the user has 5 nominations.
-### extra
-- [x] shows movie details in full screen
-- [x] has a one page design 
-- [x] shows the posters as well in the main view
-
-### TECH
-ANGULAR
-TypeScript
-CSS
-HTML
-Javascript
-Postman
-
 # MovieAwards
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.

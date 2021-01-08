@@ -1,8 +1,10 @@
 
 <!--if extro info is requested remove DOM and display extra info-->
-<app-detail-view *ngIf="detailView; else searchView" (goBack)="goBack()" [idString]="movieObjConduit"></app-detail-view>
+<app-detail-view id="details" *ngIf="detailView;" (goBack)="goBack()" [idString]="movieObjConduit">
 
-<ng-template #searchView>
+</app-detail-view>
+
+
     <div id="fixed_elements">
         <app-logo></app-logo>
         <app-search (updateView)="updateView($event)"></app-search>
@@ -15,6 +17,5 @@
         (showDetailDes)="showDetails($event)"
         (addToList)="addToSideBar($event)">
         </app-movie-cards>
-        <app-banner *ngIf="banner"></app-banner>
-        
-</ng-template>
+            <app-banner *ngIf="banner">
+        </app-banner>

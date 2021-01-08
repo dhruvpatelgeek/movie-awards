@@ -16,6 +16,18 @@
     -webkit-filter: blur(50px);
 }
 
+@-moz-document url-prefix() {
+    #text_container{
+        background-color: rgba(0, 0, 0, 0.301);
+        padding: 5vh;
+        grid-row: 2/-1;
+        grid-column: 5/7;
+        border-radius: 12px;
+        color:white;
+        font-family: lato;
+    }
+  }
+
 #text_container{
     padding: 5vh;
     grid-row: 2/-1;
